@@ -32,7 +32,11 @@ namespace EmpManagement
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                DeveloperExceptionPageOptions depo = new DeveloperExceptionPageOptions{
+                    SourceCodeLineCount = 1
+                    };
+
+                app.UseDeveloperExceptionPage(depo);
             }
         
             app.UseFileServer();
