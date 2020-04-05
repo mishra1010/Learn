@@ -34,13 +34,12 @@ namespace EmpManagement
             {
                 app.UseDeveloperExceptionPage();
             }
-            FileServerOptions fileServerOptions = new FileServerOptions();
-            fileServerOptions.DefaultFilesOptions.DefaultFileNames.Clear();
-            fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("foo.html");
-            app.UseFileServer(fileServerOptions);
+        
+            app.UseFileServer();
            
             app.Run(async (context) =>
             {
+                throw new Exception("some error processing the request");
                 await context.Response.WriteAsync("Hello World!!");
                 
             });
