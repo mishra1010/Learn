@@ -32,19 +32,14 @@ namespace EmpManagement
         {
             if (env.IsDevelopment())
             {
-                DeveloperExceptionPageOptions depo = new DeveloperExceptionPageOptions{
-                    SourceCodeLineCount = 1
-                    };
-
-                app.UseDeveloperExceptionPage(depo);
+               app.UseDeveloperExceptionPage();
             }
         
-            app.UseFileServer();
+            app.UseStaticFiles();
            
             app.Run(async (context) =>
             {
-                throw new Exception("some error processing the request");
-                await context.Response.WriteAsync("Hello World!!");
+               await context.Response.WriteAsync("Hosting Environment"+env.EnvironmentName);
                 
             });
         }
