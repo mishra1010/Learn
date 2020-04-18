@@ -16,3 +16,12 @@ C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.RazorTargetAssem
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.dll
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.pdb
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.genruntimeconfig.cache
+C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.Views.dll
+C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.Views.pdb
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.TagHelpers.input.cache
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.TagHelpers.output.cache
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.RazorCoreGenerate.cache
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.cshtml.g.cs
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.RazorTargetAssemblyInfo.cs
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.Views.pdb
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csproj.CopyComplete
