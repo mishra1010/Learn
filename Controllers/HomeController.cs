@@ -28,7 +28,9 @@ namespace EmpManagement.Controllers
         public ViewResult Details()
         {
             Employee model = _employeeRepository.GetEmployee(1);
-            return View(model);
+            ViewData["Employee"] = model;
+            ViewData["PageTitle"] = "Employee Details";
+            return View();
         }
     }
 }
