@@ -32,7 +32,7 @@ namespace EmpManagement.Controllers
             //ViewData["PageTitle"] = "Employee Details";
             ViewBag.Employee = model;
             ViewBag.PageTitle = "Employee Details";
-            return View();
+            return View(model);
         }
     }
 }

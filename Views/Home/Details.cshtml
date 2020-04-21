@@ -1,4 +1,5 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model EmpManagement.Models.Employee
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
 </head>
@@ -7,13 +8,13 @@
 
    
     <div>
-        Name: @ViewBag.Employee.Name
+        Name: @Model.Name
     </div>
     <div>
-        Name: @ViewBag.Employee.Email
+        Name: @Model.Email
     </div>
     <div>
-        Name: @ViewBag.Employee.Department
+        Name: @Model.Department
     </div>
 </body>
 </html>
