@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EmpManagement.Models;
+using EmpManagement.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -27,12 +28,13 @@ namespace EmpManagement.Controllers
 
         public ViewResult Details()
         {
-            Employee model = _employeeRepository.GetEmployee(1);
-            //ViewData["Employee"] = model;
-            //ViewData["PageTitle"] = "Employee Details";
-            ViewBag.Employee = model;
-            ViewBag.PageTitle = "Employee Details";
-            return View(model);
+            HomeDetailsViewModel hdvm = new HomeDetailsViewModel()
+            {
+                Employee = _employeeRepository.GetEmployee(1),
+                PageTitle = "Employee Details"
+            };
+            
+            return View(hdvm);
         }
     }
 }
