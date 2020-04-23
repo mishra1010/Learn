@@ -21,9 +21,10 @@ namespace EmpManagement.Controllers
         // GET: /<controller>/
         
         //add method
-        public string Index()
+        public ViewResult Index()
         {
-            return _employeeRepository.GetEmployee(1).Name;
+            var model=_employeeRepository.GetAllEmployees();
+            return View(model);
         }
 
         public ViewResult Details()
