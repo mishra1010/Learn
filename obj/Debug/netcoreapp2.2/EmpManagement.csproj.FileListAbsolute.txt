@@ -27,3 +27,4 @@ C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.Views.pdb
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csproj.CopyComplete
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\shared\_Layout.cshtml.g.cs
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
