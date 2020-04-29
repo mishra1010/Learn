@@ -42,7 +42,7 @@ namespace EmpManagement
             //app.UseMvcWithDefaultRoute();
             app.UseMvc(routes =>
             {
-                routes.MapRoute("default", "{controller}/{action}/{id?}");
+                routes.MapRoute("default", "{controller=Home}/{action=index}/{id?}");
             });
            
            
