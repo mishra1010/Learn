@@ -29,3 +29,4 @@ C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\shared\_Layout.cshtml.g.cs
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\libman.json
