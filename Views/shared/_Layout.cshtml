@@ -18,7 +18,22 @@
 </head>
 <body>
     <div class="container">
-        @RenderBody()
+        <nav class="navbar-nav navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" asp-action="index" asp-controller="home">
+                <img src="~/images/Microsoft.png" height="30" width="30" />
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a asp-action="index" asp-controller="home" class="nav-link">List</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="create" asp-controller="home" class="nav-link">Create</a>
+                </li>
+            </ul>
+        </nav>
+        <div >
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>
