@@ -27,15 +27,20 @@ namespace EmpManagement.Controllers
             return View(model);
         }
 
-        public ViewResult Details(int id)
+        public ViewResult Details(int? id)
         {
             HomeDetailsViewModel hdvm = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(1),
+                Employee = _employeeRepository.GetEmployee(id ?? 1),
                 PageTitle = "Employee Details"
             };
             
             return View(hdvm);
+        }
+
+        public ViewResult Create()
+        {
+            return View();
         }
     }
 }

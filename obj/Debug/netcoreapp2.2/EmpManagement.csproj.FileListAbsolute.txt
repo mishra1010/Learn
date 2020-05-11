@@ -30,3 +30,4 @@ C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\shared\_Layout.csh
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\libman.json
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.cshtml.g.cs
