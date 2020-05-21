@@ -29,7 +29,7 @@ namespace EmpManagement
         {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmpDBConnection")));
             services.AddMvc();
-            services.AddSingleton<IEmployeeRepository, MockEmployeeRepocitory>();
+            services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
