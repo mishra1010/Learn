@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -58,8 +59,20 @@ namespace EmpManagement.Controllers
                 if (model.Photo != null)
                 {
                     string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                    uniqueFileName = Guid.NewGuid().ToString() + "-" + model.Photo.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
                 }
-                Employee newEmployee = _employeeRepository.Add(employee);
+                Employee newEmployee = new Employee
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Department = model.Department,
+                    PhotoPath = uniqueFileName
+
+                };
+
+                _employeeRepository.Add(newEmployee);
                 return RedirectToAction("details", new { id = newEmployee.Id });
             }
             return View();
