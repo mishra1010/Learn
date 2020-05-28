@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using EmpManagement.Models;
 using EmpManagement.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,10 +15,13 @@ namespace EmpManagement.Controllers
     public class HomeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IHostingEnvironment hostingEnvironment;
 
-        public HomeController(IEmployeeRepository employeeRepository)
+        public HomeController(IEmployeeRepository employeeRepository,
+                               IHostingEnvironment hostingEnvironment)
         {
             _employeeRepository = employeeRepository;
+            this.hostingEnvironment = hostingEnvironment;
         }
         // GET: /<controller>/
         
@@ -45,10 +50,15 @@ namespace EmpManagement.Controllers
 
 
         [HttpPost]
-        public IActionResult Create(Employee employee)
+        public IActionResult Create(EmployeeCreateViewModel model)
         {
             if (ModelState.IsValid)
             {
+                string uniqueFileName = null;
+                if (model.Photo != null)
+                {
+                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                }
                 Employee newEmployee = _employeeRepository.Add(employee);
                 return RedirectToAction("details", new { id = newEmployee.Id });
             }
