@@ -7,7 +7,6 @@ C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.runtimeconfig.de
 C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.dll
 C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.pdb
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csprojAssemblyReference.cache
-C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csproj.CoreCompileInputs.cache
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.RazorAssemblyInfo.cache
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.RazorAssemblyInfo.cs
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.AssemblyInfoInputs.cache
@@ -31,3 +30,4 @@ C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\libman.json
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.cshtml.g.cs
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csproj.CoreCompileInputs.cache
