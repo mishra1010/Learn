@@ -68,23 +68,24 @@ namespace EmpManagement.Controllers
                 employee.Name = model.Name;
                 employee.Email = model.Email;
                 employee.Department = model.Department;
-                string uniqueFileName = ProcessUploadedFile(model);
-                Employee newEmployee = new Employee
+                if (model.Photo != null)
                 {
-                    Name = model.Name,
-                    Email = model.Email,
-                    Department = model.Department,
-                    PhotoPath = uniqueFileName
-
-                };
-
-                _employeeRepository.Add(newEmployee);
-                return RedirectToAction("details", new { id = newEmployee.Id });
+                    if (model.ExistingPhotoPath != null)
+                    {
+                        string filePath = Path.Combine(hostingEnvironment.WebRootPath, "images", model.ExistingPhotoPath);
+                        System.IO.File.Delete(filePath);
+                    }
+                    employee.PhotoPath = ProcessUploadedFile(model);
+                }
+                
+              
+                _employeeRepository.Update(employee);
+                return RedirectToAction("index");
             }
             return View();
         }
 
-        private string ProcessUploadedFile(EmployeeEditViewModel model)
+        private string ProcessUploadedFile(EmployeeCreateViewModel model)
         {
             string uniqueFileName = null;
             if (model.Photo != null)
@@ -109,14 +110,8 @@ namespace EmpManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                string uniqueFileName = null;
-                if (model.Photo != null)
-                {
-                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
-                    uniqueFileName = Guid.NewGuid().ToString() + "-" + model.Photo.FileName;
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-                    model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
-                }
+                string uniqueFileName = ProcessUploadedFile(model);
+                
                 Employee newEmployee = new Employee
                 {
                     Name = model.Name,
