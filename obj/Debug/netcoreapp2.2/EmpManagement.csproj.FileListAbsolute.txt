@@ -33,3 +33,4 @@ C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.genruntimeconfig
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csproj.CopyComplete
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csprojAssemblyReference.cache
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.cshtml.g.cs
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\shared\NotFound.cshtml.g.cs
