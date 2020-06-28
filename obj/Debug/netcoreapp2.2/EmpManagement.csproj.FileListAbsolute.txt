@@ -9,7 +9,6 @@ C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.dll
 C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.pdb
 C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.Views.dll
 C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\EmpManagement.Views.pdb
-C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csproj.CoreCompileInputs.cache
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.RazorAssemblyInfo.cache
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.RazorAssemblyInfo.cs
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.AssemblyInfoInputs.cache
@@ -35,3 +34,5 @@ C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csprojAssemblyRe
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.cshtml.g.cs
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\shared\NotFound.cshtml.g.cs
 C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\Razor\Views\shared\Error.cshtml.g.cs
+C:\Projects\EmpManagement\bin\Debug\netcoreapp2.2\nlog.config
+C:\Projects\EmpManagement\obj\Debug\netcoreapp2.2\EmpManagement.csproj.CoreCompileInputs.cache
