@@ -35,7 +35,11 @@ namespace EmpManagement.Controllers
 
         public ViewResult Details(int? id)
         {
-            throw new Exception("Error in Details View");
+            if (!id.HasValue)
+            {
+                Response.StatusCode = 404;
+                return View("EmployeeNotFound", id);
+            }
 
             Employee employee = _employeeRepository.GetEmployee(id.Value);
             if (employee == null)
