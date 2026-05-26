@@ -1,34 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\EmpManagement\\EmpManagement.csproj": {}
+    "/home/runner/work/Learn/Learn/EmpManagement.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\EmpManagement\\EmpManagement.csproj": {
+    "/home/runner/work/Learn/Learn/EmpManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\EmpManagement\\EmpManagement.csproj",
+        "projectUniqueName": "/home/runner/work/Learn/Learn/EmpManagement.csproj",
         "projectName": "EmpManagement",
-        "projectPath": "C:\\Projects\\EmpManagement\\EmpManagement.csproj",
-        "packagesPath": "C:\\Users\\demishra\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\EmpManagement\\obj\\",
+        "projectPath": "/home/runner/work/Learn/Learn/EmpManagement.csproj",
+        "packagesPath": "/tmp/codeql-scratch-ee7f7135b33a94d7/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/Learn/Learn/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\demishra\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
+            "framework": "netcoreapp2.2",
+            "targetAlias": "netcoreapp2.2",
             "projectReferences": {}
           }
         },
@@ -36,10 +33,18 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "framework": "netcoreapp2.2",
+          "targetAlias": "netcoreapp2.2",
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -73,11 +78,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
